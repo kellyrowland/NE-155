@@ -6,5 +6,5 @@ hw4\_6gs.py, or hw4\_6sor.py.
 
 The output format for these files is:
 
-number of iterations
+number of iterations  
 solution vector
