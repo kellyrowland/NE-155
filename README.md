@@ -1,6 +1,4 @@
 # NE-155
-github repo for electronic code submission
-
 For Homework 4, the files are run with the command "python *filename*", where *filename* is hw4_6j.py,
 hw4\_6gs.py, or hw4\_6sor.py.
 
