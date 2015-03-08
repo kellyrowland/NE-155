@@ -3,7 +3,7 @@ For Homework 4, the files are run with the command "python *filename*", where *f
 hw4\_6gs.py, or hw4\_6sor.py (it is assumed that the user has Python installed on their system).
 
 For Homework 5, the files are run with the command "python *filename*", where *filename* is hw5\_4j.py,
-hw5\_4gs.py, hw5\_4sor.py, hw5\_4omega.py.
+hw5\_4gs.py, hw5\_4sor.py, or hw5\_4omega.py.
 
 The output format for these files (except for the calculation of omega\_opt) is:
 
