@@ -12,19 +12,20 @@ x_old = np.repeat(0.0,n)
 x_new = np.repeat(0.0,n)
 delta = 1.0
 n_iter = 0
+omega = 1.1
 
-while delta > 10**(-6):
+while delta > 10**(-8):
 	n_iter += 1
 	for i in range(0,n):
 		sum1 = 0.0
 		sum2 = 0.0
 		for j in range(0,i):
-			sum1 += A[i,j]*x_old[j]
+			sum1 += A[i,j]*x_new[j]
 		for j in range(i+1,n):
 			sum2 += A[i,j]*x_old[j]
-		x_new[i] = (b[i] - sum1 - sum2)/A[i,i]
-	delta = max(abs(np.linalg.solve(A,b) - x_new))
-	x_old = x_new
+		x_new[i] = (1 - omega)*x_old[i] + omega*(b[i] - sum1 - sum2)/A[i,i]
+        delta = np.linalg.norm(x_new - x_old)/np.linalg.norm(x_new)
+        x_old = x_new
 
 print "no. iterations: " + repr(n_iter)
 print "solution: " + repr(x_new)

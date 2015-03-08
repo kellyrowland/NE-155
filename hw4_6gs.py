@@ -26,5 +26,6 @@ while delta > 10**(-6):
 	delta = max(abs(np.linalg.solve(A,b) - x_new))
 	x_old = x_new
 
-print n_iter
-print x_new
+print "no. iterations: " + repr(n_iter)
+print "solution: " + repr(x_new)
+print "error: " + repr(abs(np.linalg.solve(A,b) - x_new))
