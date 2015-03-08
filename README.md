@@ -8,7 +8,7 @@ hw5\_4gs.py, or hw5\_4sor.py.
 The output format for these files is:
 
 number of iterations  
-solution vector
+solution vector  
 error
 
 The error is calculated as the absolute difference between the calculated solution vector and the result 
